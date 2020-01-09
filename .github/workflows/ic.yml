@@ -9,14 +9,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: apt
-      run: sudo apt-get install gcc g++ make
-    - name: nodejs
-      run: sudo apt install nodejs
-    - name: express
-      run: npm install express
     - name: surge
-      run: npm install --global surge
+      run: npm install -g surge
     - name: pip
       run: pip install html5validator
     - name: validator
