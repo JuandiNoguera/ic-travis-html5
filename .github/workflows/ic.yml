@@ -17,6 +17,6 @@ jobs:
     - name: pip
       run: pip install html5validator
     - name: validator
-      run: html5validator --root _build/
+      run: html5validator --root ./
     - name: deployer
       run: surge ./ ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
